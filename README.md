@@ -12,4 +12,4 @@ Sovelluksen ominaisuudet:
 * Käyttäjä voi hakea viestejä hakusanalla.
 * Ylläpitäjä voi lisätä ja poistaa alueita tai ketjuja.
 * Ylläpitäjä voi lukittaa alueen tai ketjun.
-* Ylläpitäjä voi luoda salaisen alueen, ja määritellä kenellän on pääsy sisälle.
+* Ylläpitäjä voi luoda salaisen alueen, ja määritellä kenellä on pääsy sisälle.
