@@ -1,0 +1,7 @@
+Viestien määrä: {{ count }}
+<hr>
+{% for message in messages %}
+{{ message.msg }}
+<hr>
+{% endfor %}
+<a href="/new">Lähetä viesti</a>

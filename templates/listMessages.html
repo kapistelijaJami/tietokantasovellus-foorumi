@@ -1,0 +1,12 @@
+<ul>
+	{% for message in messages %}
+	<li>{{ message.msg }}</li>
+	{% endfor %}
+</ul>
+
+<form action="/send/{{threadId}}" method="POST">
+	Lähetä viesti: <br>
+	<textarea name="content" rows="3" cols="40"></textarea>
+	<br>
+	<input type="submit" value="Lähetä">
+</form>
