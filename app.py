@@ -4,12 +4,16 @@ from flask_sqlalchemy import SQLAlchemy
 from os import getenv
 
 app = Flask(__name__)
-uri = str(getenv("DATABBASE_URL"))
+uri = getenv("DATABASE_URL")
 if uri.startswith("postgres://"):
     uri = uri.replace("postgres://", "postgresql://", 1)
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 app.config["SQLALCHEMY_DATABASE_URI"] = uri
 db = SQLAlchemy(app)
+
+@app.route("/envTest")
+def envTest():
+	return uri;
 
 @app.route("/")
 def index():
