@@ -11,10 +11,6 @@ app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 app.config["SQLALCHEMY_DATABASE_URI"] = uri
 db = SQLAlchemy(app)
 
-@app.route("/envTest")
-def envTest():
-	return uri;
-
 @app.route("/")
 def index():
 	result = db.session.execute("SELECT * FROM area")
